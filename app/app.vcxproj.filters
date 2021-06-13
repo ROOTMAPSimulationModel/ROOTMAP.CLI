@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{0a54f60b-1b7b-41ba-be63-f3861267e123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{f4d296b0-849f-4351-90f5-1d4f7c817032}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\CliSimulationEngine.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\SimulationActivityOutput.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="main\ProcessDrawing.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\ViewCaptureOutputStrategy.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="common\RmGetOpts.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\FilesystemUtilities.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\RmVersion.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="main\RmCommandLineApp.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\CliSimulationEngine.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SimulationActivityOutput.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\RmGetOpts.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\FilesystemUtilities.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="main\RmCommandLineApp.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="main\RootMapCLI.rc">
+      <Filter>main</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="version-stamp.ps1" />
+    <None Include="rootmap.log.cfg" />
+  </ItemGroup>
+</Project>
