@@ -27,9 +27,6 @@
     <ClCompile Include="common\FilesystemUtilities.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="common\RmVersion.cpp">
-      <Filter>common</Filter>
-    </ClCompile>
     <ClCompile Include="main\RmCommandLineApp.cpp">
       <Filter>main</Filter>
     </ClCompile>
@@ -58,7 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="version-stamp.ps1" />
     <None Include="rootmap.log.cfg" />
   </ItemGroup>
 </Project>

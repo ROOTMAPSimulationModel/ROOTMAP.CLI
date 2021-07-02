@@ -14,7 +14,7 @@
 #include <string>
 #include <vector>
 
-extern const std::string rootmapCliVersion;
+extern const std::string rootmapVersion;
 
 namespace rootmap
 {

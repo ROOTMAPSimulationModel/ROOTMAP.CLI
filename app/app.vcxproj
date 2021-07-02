@@ -79,12 +79,6 @@
       <AdditionalDependencies>wsock32.lib;%(AdditionalDependencies);core.lib;simulation.lib</AdditionalDependencies>
       <OptimizeReferences>false</OptimizeReferences>
     </Link>
-    <PreBuildEvent>
-      <Command>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File version-stamp.ps1</Command>
-    </PreBuildEvent>
-    <PreBuildEvent>
-      <Message>Stamp version number into application code.</Message>
-    </PreBuildEvent>
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
@@ -116,12 +110,6 @@
       <AdditionalDependencies>wsock32.lib;%(AdditionalDependencies);core.lib;simulation.lib</AdditionalDependencies>
       <LinkTimeCodeGeneration />
     </Link>
-    <PreBuildEvent>
-      <Command>powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File version-stamp.ps1</Command>
-    </PreBuildEvent>
-    <PreBuildEvent>
-      <Message>Stamp version number into application code.</Message>
-    </PreBuildEvent>
     <ProjectReference>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
@@ -129,7 +117,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="rootmap.log.cfg" />
-    <None Include="version-stamp.ps1" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="rootmap.log.cfg">
@@ -140,7 +127,6 @@
     <ClCompile Include="common\CliSimulationEngine.cpp" />
     <ClCompile Include="common\FilesystemUtilities.cpp" />
     <ClCompile Include="common\RmGetOpts.cpp" />
-    <ClCompile Include="common\RmVersion.cpp" />
     <ClCompile Include="common\SimulationActivityOutput.cpp" />
     <ClCompile Include="main\ProcessDrawing.cpp" />
     <ClCompile Include="main\RmCommandLineApp.cpp" />
