@@ -2,6 +2,7 @@
 #define FilesystemUtilities_H
 
 #include <deque>
+#include <string>
 
 // Forward declaration.
 class wxString;
